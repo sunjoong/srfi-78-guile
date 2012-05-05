@@ -7,4 +7,6 @@
             check-reset!
             check-passed?))
 
+(cond-expand-provide (current-module) '(srfi-78))
+
 (include-from-path "srfi/srfi-78/check.scm")
